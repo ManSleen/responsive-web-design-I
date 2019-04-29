@@ -167,7 +167,7 @@ nav a:hover {
 }
 
 #nav-container ul {
-  width: 800px;
+  width: 780px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -381,6 +381,11 @@ footer {
     width: 100%;
   }
 
+  .services-header-img {
+    width: 100%;
+    margin: 150px 0 3% 0;
+  }
+
   #logo {
     min-width: 100%;
     flex: 1 0 100%;
@@ -436,6 +441,21 @@ footer {
     line-height: 1.1em;
   }
 
+  #our-services {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #services-facts {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
   footer {
     margin: 37px 10px;
     line-height: 1em;
@@ -478,10 +498,6 @@ footer {
     flex: 0 0 100%;
   }
 
-  .services-header-img {
-    width: 100%;
-  }
-
   .container {
     margin: 0 auto;
     width: 90%;
@@ -491,14 +507,14 @@ footer {
 
   #cards-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .cards {
-    width: 100%;
+    width: 48%;
     background-color: #efefef;
     border: 1px solid grey;
     display: flex;
@@ -506,18 +522,23 @@ footer {
     justify-content: space-between;
   }
 
-  .services-info-img {
-    width: 100%;
-  }
-
   .middle-img {
     height: 100%;
+  }
+  img.services-info-img {
+    width: 100%;
+    align-self: center;
   }
 }
 
 @media screen and (max-width: 500px) {
   header {
     width: 100%;
+  }
+
+  .services-header-img {
+    width: 100%;
+    margin-top: 360px;
   }
 
   #logo {
@@ -568,8 +589,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 65vw 0 15% 0;
-    height: 70vw;
+    margin: 280px 0 15% 0;
+    /* height: 70vw; */
   }
 
   h1 {
@@ -597,6 +618,23 @@ footer {
 
   .middle-img {
     height: 100%;
+  }
+
+  #cards-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cards {
+    width: 100%;
+    background-color: #efefef;
+    border: 1px solid grey;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
   }
 
   body section {
@@ -639,6 +677,24 @@ footer {
   footer {
     margin: 37px 0;
     line-height: 1em;
+    width: 100%;
+  }
+
+  #services-section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    margin: 40px 0 10% 0;
+  }
+
+  #services-facts {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .services-info-img {
     width: 100%;
   }
 }
