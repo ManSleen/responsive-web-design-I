@@ -255,13 +255,13 @@ p {
 
 #features {
   line-height: 1.1em;
-
+  padding-right: 5px;
   width: 50%;
 }
 
 #about {
   line-height: 1.1em;
-
+  padding-left: 5px;
   width: 50%;
 }
 
@@ -381,6 +381,35 @@ footer {
     width: 100%;
   }
 
+  #logo {
+    min-width: 100%;
+    flex: 1 0 100%;
+    text-align: center;
+    margin: 40px 0;
+    order: 1;
+  }
+
+  #nav-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+  }
+
+  #nav-container ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+  }
+
+  #fixed-nav {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
   #right-header {
     display: none;
   }
@@ -410,7 +439,7 @@ footer {
   footer {
     margin: 37px 10px;
     line-height: 1em;
-    width: 100%x;
+    width: 100%;
   }
 
   #features-container {
@@ -481,11 +510,24 @@ footer {
     width: 100%;
   }
 
+  .middle-img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+
   #logo {
     min-width: 100%;
     flex: 1 0 100%;
     text-align: center;
-    margin: 40px 0;
+    margin: 0;
+    padding: 15px 0;
+    order: 1;
+    border-bottom: 1px solid black;
   }
 
   #nav-container {
@@ -493,28 +535,110 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+  }
+
+  #nav-container ul a {
+    min-width: 100%;
+    flex: 1 0 100%;
+    text-align: center;
+    order: 2;
+  }
+
+  #nav-container ul li {
+    border-bottom: 1px solid black;
+    padding: 15px 0;
   }
 
   #nav-container ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     align-items: center;
   }
 
   #fixed-nav {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #eee;
-    position: fixed;
-    left: 0;
-    width: 100%;
     height: auto;
     padding-bottom: 20px;
   }
-}
 
-@media screen and (max-width: 500px) {
+  #header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 65vw 0 15% 0;
+    height: 70vw;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 3.4px;
+    text-align: center;
+    font-family: "Alfa Slab One", cursive;
+  }
+
+  #features {
+    line-height: 1.1em;
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
+  }
+
+  #about {
+    line-height: 1.1em;
+    padding: 10px 0;
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .middle-img {
+    height: 100%;
+  }
+
+  body section {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  #services {
+    padding: 10px 0;
+    line-height: 1.1em;
+    margin: 5% 0;
+  }
+
+  #product {
+    padding: 10px 0;
+    line-height: 1.1em;
+    margin: 5% 0;
+  }
+
+  #vision {
+    padding: 10px 0;
+    line-height: 1.1em;
+    margin: 5% 0;
+  }
+
+  #features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px auto;
+  }
+
+  footer {
+    margin: 37px 0;
+    line-height: 1em;
+    width: 100%;
+  }
 }
